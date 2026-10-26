@@ -1,0 +1,16 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "codeql-mrva",
+  "description": "Run CodeQL queries across up to 1,000 GitHub repositories with multi-repository variant analysis.",
+  "owner": {
+    "name": "TikoTikTok"
+  },
+  "plugins": [
+    {
+      "name": "codeql-mrva",
+      "description": "MRVA end to end: variant query authoring, target lists, controller repository, gh-mrva / VS Code / REST runs, SARIF triage, disclosure.",
+      "source": "./",
+      "category": "security"
+    }
+  ]
+}

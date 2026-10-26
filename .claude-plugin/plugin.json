@@ -1,0 +1,9 @@
+{
+  "name": "codeql-mrva",
+  "version": "1.0.0",
+  "description": "CodeQL multi-repository variant analysis (MRVA): run one query across up to 1,000 GitHub repositories, build target lists, check database availability, triage SARIF and report responsibly.",
+  "author": {
+    "name": "TikoTikTok",
+    "url": "https://github.com/TikoTikTok"
+  }
+}

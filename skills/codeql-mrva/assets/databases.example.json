@@ -1,0 +1,10 @@
+{
+  "py-pickle": [
+    "psf/requests",
+    "pallets/flask",
+    "django/django"
+  ],
+  "flatbuffers": [
+    "google/flatbuffers"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "codeql-mrva",
+  "version": "1.0.0",
+  "description": "CodeQL multi-repository variant analysis (MRVA): run one query across up to 1,000 GitHub repositories, build target lists, check database availability, triage SARIF and report responsibly.",
+  "author": {
+    "name": "TikoTikTok",
+    "url": "https://github.com/TikoTikTok"
+  },
+  "homepage": "https://github.com/offensiveadhd/codeql-mrva",
+  "repository": "https://github.com/offensiveadhd/codeql-mrva",
+  "license": "MIT",
+  "keywords": ["codeql", "mrva", "variant-analysis", "security", "sast", "github"],
+  "skills": "./skills/"
+}

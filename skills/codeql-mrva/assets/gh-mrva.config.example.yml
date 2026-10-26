@@ -1,0 +1,14 @@
+# ~/.config/gh-mrva/config.yml  (Windows: C:\Users\<you>\.config\gh-mrva\config.yml)
+# Every key can be overridden per command: --controller, --list-file, --codeql-path.
+
+# NWO of the controller repository (create it with scripts/mrva_controller.sh)
+controller: OWNER/mrva-controller
+
+# JSON file with the repository lists: {"list-name": ["owner/repo", ...]}
+# (scripts/mrva_list.py writes this format by default)
+list_file: /abs/path/to/databases.json
+
+# Optional. A checkout of https://github.com/github/codeql at the tag that matches
+# your CLI (git checkout codeql-cli/vX.Y.Z). Only needed when the query pack does
+# not declare its own dependencies in qlpack.yml.
+# codeql_path: /abs/path/to/codeql

@@ -1,0 +1,26 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  pytest:
+    strategy:
+      fail-fast: false
+      matrix:
+        # ubuntu-24.04, not -latest: ubuntu-latest moved to 26.04, which has no Python 3.9 build
+        os: [ubuntu-24.04, windows-latest]
+        python: ["3.9", "3.12"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install pytest
+      - run: python -m pytest -q
+      - name: shell scripts parse
+        if: runner.os == 'Linux'
+        run: bash -n install.sh && bash -n skills/codeql-mrva/scripts/mrva_controller.sh
